@@ -3,10 +3,12 @@
     margin:0;
     box-sizing:border-box;
     font-family:minhaFonte;
+    font-weight: bold;
+    user-select: none;
 }
 header{
     width: 100%;
-    background-color: #bc393f;
+    background-color: #96040b;
     position: fixed;
     z-index: 1000;
     
@@ -65,7 +67,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #f8f3e9;
-    color: #a74646;
+    color: #641111;
 }
 
 .bemvindo h2{
@@ -81,7 +83,7 @@ nav ul li a:hover {
     display: flex;
     background-image: url('fundosite.jpg');
     background-size: cover;
-    background-color: red;
+    background-color: #96040b;
     background-position-y:-130px ;
 }
 .conteudoum img{
@@ -105,21 +107,27 @@ nav ul li a:hover {
     font-weight: bold;
     font-size:23px;
     font-family: minhaFonte;
-    color:black;
-    background-color: #bc393f;
+    color:white;
+    background-color: #96040b;
     border-style: none;
     cursor:pointer;
-    transition: 0.4s all;
+    transition: 0.1s all;
     border-radius: 50px;
-}
-.botaojogo button:hover{
-    color: white;
+    -webkit-box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
+-moz-box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
+box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
 }
 .botaojogo button:active{
-    transform: scale(1.2);
+    
+    transform: scale(0.9);
+    -webkit-box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+transform:translateY(10%);
+
 }
 .conteudodois{
-    background: radial-gradient(circle, #ff6666 0%, #8b0000 70%);
+    background: radial-gradient(circle, #ff000085 -40%, #8b0000 70%);
     height: 800px;
     padding: 40px;
     border-top: 0.1px solid;
@@ -153,10 +161,36 @@ nav ul li a:hover {
     border-style: solid;
     margin-top:60px ;
     margin-left: 110px;
-
-    height: 250px;
+    -webkit-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    height: 300px;
     width: 350px;
     background-color: white;
+    position: relative; /* Adiciona esta linha */
+    border-style: solid;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 370px;
+    background-color: white;
+    padding: 15px; /* Adiciona espaço interno */
+}
+.caixa2{
+    border-style: solid;
+    margin-top:10px ;
+    margin-left: 110px;
+    -webkit-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    height: 350px;
+    width: 550px;
+    background-color: white;
+    position: relative; /* Adiciona esta linha */
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: white;
+    padding: 15px; /* Adiciona espaço interno */
 }
 .topocaixa{
     background-color:#bc393f;
@@ -169,33 +203,22 @@ nav ul li a:hover {
     padding: 10px;
     border-style: solid;
 }
-.bordahorizontal{
-    background-color: black;
-    height: 220px;
-    margin-top:90px;
-    width: 20px;
+
+.alinhamentomaior{
+    display: flex;
 }
-.bordavertical {
-    background-color: black;
-    height: 20px;
-    width: 330px;
-    margin-left:140px;
-}
-.alinhamento{display:flex;}
-.alinhamentomaior{display: flex;}
 
 .caixa {
     border-style: solid;
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 100px;
-    height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
-    width: 350px;
+    width: 370px;
     background-color: white;
     padding: 15px; /* Adiciona espaço interno */
 }
 
 .topocaixa {
-    background-color: #bc393f;
+    background-color: #a50008;
     color: white;
     font-weight: bold;
     width: 100%;
@@ -213,7 +236,7 @@ nav ul li a:hover {
     line-height: 1.5; /* Altura das linhas do texto para melhor legibilidade */
 }
 .conteudotres{
-    background-image: url('3735451-bela-paisagem-de-inverno-com-neve-uma-casa-de-madeira-perto-de-uma-floresta-durante-uma-tempestade-neve-forte-banff-parque-nacional-canada-gratis-foto.jpg');
+    background-image: url('fundoterceiroconteudo.png');
     background-size: cover;
     height: 600px;
     background-position-y: -350px;
@@ -227,11 +250,11 @@ nav ul li a:hover {
     border-style: solid;
     width: 600px;
     height: 400px;
-    background-color: rgba(255, 0, 0, 0.3); /* Fundo semi-transparente */
+    background-color: rgba(255, 177, 177, 0.596); /* Fundo semi-transparente */
     backdrop-filter: blur(12px); /* Aplica o efeito de desfoque no fundo */
     border-radius: 100px; /* Arredonda os cantos */
     border: 1px solid rgba(255, 255, 255, 0.349); /* Borda sutil */
-    color: white;
+    color: rgb(255, 0, 0);
     text-align: center;
     padding-top: 40px;
     font-weight: bold;
@@ -270,20 +293,21 @@ nav ul li a:hover {
     width: 80%;
     max-width: 500px;
     text-align: center;
+    position: relative; /* Para posicionar o botão de fechar corretamente */
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Cor do 'X' */
+    float: right; /* Posiciona o 'X' à direita */
+    font-size: 28px; /* Tamanho da fonte do 'X' */
+    font-weight: bold; /* Deixa o 'X' em negrito */
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Cor ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
 }
 
 .rating {
@@ -392,10 +416,11 @@ footer {
 
 /* Estilo das setas de navegação */
 .carousel-control {
+    width: 60px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 100%;
+    border-radius: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
@@ -437,4 +462,89 @@ footer {
     .footer-bottom p {
         font-size: 12px;
     }
+}
+.saibamais{
+    position: absolute;
+    bottom: 20px;
+    left: 240px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color:#a50008;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+    box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+}
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa na tela */
+    z-index: 10000; /* Coloca na frente de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo do conteúdo do popup */
+.popup-content {
+    background-color: #fefefe; /* Fundo branco */
+    margin: 15% auto; /* Margem do topo e centralizado */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    width: 80px; /* Largura do popup */
+    max-width: 600px; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa; /* Cor padrão */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+}
+
+.close:hover,
+.close:focus {
+    color: #d9534f; /* Cor quando passa o mouse */
+    text-decoration: none; /* Sem sublinhado */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilo do texto dentro do popup */
+#popup-text {
+    margin-top: 20px; /* Espaçamento acima do texto */
+    font-size: 18px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+.popup-content {
+    margin-top:30px ;
+    background-color: #fefefe; /* Fundo branco */ /* Margem do topo e centralizado */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    width: 80%; /* Ajuste a largura do popup */
+    max-width: 800px; /* Largura máxima aumentada para 800px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+
+.popup-text {
+    flex: 1; /* O texto ocupa o espaço restante */
+    margin-left: 20px; /* Espaçamento à esquerda do texto */
+}
+
+.popup-image {
+    width: 650px; /* Defina a largura desejada da imagem */
+    height: 350px; /* Mantém a proporção da imagem */
+    border: solid;
 }
